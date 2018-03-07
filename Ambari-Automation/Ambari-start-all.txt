@@ -1,0 +1,6 @@
+
+
+curl -i -u admin:admin -H "X-Requested-By: ambari"  -X PUT  -d '{"RequestInfo":{"context":"Stop All Host Components","operation_level":{"level":"HOST","cluster_name":"Sandbox","host_names":"sandbox.hortonworks.com"},"query":"HostRoles/component_name.in(APP_TIMELINE_SERVER,DATANODE,HISTORYSERVER,METRICS_COLLECTOR,METRICS_GRAFANA,METRICS_MONITOR,NAMENODE,NFS_GATEWAY,NODEMANAGER,RANGER_ADMIN,RANGER_TAGSYNC,RANGER_USERSYNC,RESOURCEMANAGER,SECONDARY_NAMENODE,ZOOKEEPER_SERVER)"},"Body":{"HostRoles":{"state":"INSTALLED"}}}' http://localhost:8080/api/v1/clusters/hcp12/hosts/sandbox.hortonworks.com/host_components
+
+
+
